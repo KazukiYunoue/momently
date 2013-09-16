@@ -1,0 +1,15 @@
+%h1 Listing scenes
+
+%table
+  %tr
+    %th
+    %th
+
+  - @scenes.each do |scene|
+    %tr
+      %td= link_to image_tag(scene.image(:thumb)), scene_path(scene)
+      %td= link_to scene.name, scene_path(scene)
+
+%br
+
+= link_to 'New Scene', new_scene_path

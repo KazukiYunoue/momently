@@ -15,5 +15,8 @@
 /log/*.log
 /tmp
 
-# Igonore rvm's versions.conf
+# Ignore rvm's versions.conf
 .versions.conf
+
+# Ignore paperclip's development datas
+/public/system/scenes/*
